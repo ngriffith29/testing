@@ -1,0 +1,83 @@
+
+
+
+
+.carousel-next-button {
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - 17px);
+  right: 30px;
+  height: 35px;
+  width: 35px;
+  border-radius: 30px;
+  cursor: pointer;
+  opacity: 0.6;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.carousel-next-button.dark {
+    background-color: rgba(54, 63, 84, 0.2);
+}
+
+
+.carousel-next-button:hover {
+    opacity: 1;
+}
+
+
+.carousel-next-button .arrow {
+  stroke: none !important;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  height: 12px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.carousel-next-button .progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 38px;
+  width: 38px;
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+  -ms-transform: translate(-50%, -50%) rotate(-90deg);
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.carousel-next-button .progress circle {
+  fill: none !important;
+  stroke-width: 4px;
+  stroke-dasharray: 340;
+  stroke-dashoffset: 340;
+  -webkit-transition: stroke-dashoffset 0s ease;
+  -o-transition: stroke-dashoffset 0s ease;
+  transition: stroke-dashoffset 0s ease;
+}
+
+.carousel-next-button .progress.active circle {
+  stroke-dashoffset: 0;
+}
+
+.carousel-next-button .arrow,
+.carousel-next-button .progress circle {
+  fill: #FFF;
+  stroke: #FFF;
+}
+
+.carousel-next-button.dark .arrow,
+.carousel-next-button.dark .progress circle {
+  fill: #363F54;
+  stroke: #363F54;
+}
+
+@media screen and (max-width: 970px) {
+  .carousel-next-button {
+    display: none;
+  }
+}

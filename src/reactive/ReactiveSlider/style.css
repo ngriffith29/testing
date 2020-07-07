@@ -1,0 +1,24 @@
+
+
+
+
+.reactive-slider .container-main {
+    position: relative;
+    overflow-x: hidden;
+    oberflow-y: hidden;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+.reactive-slider .container-band {
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
